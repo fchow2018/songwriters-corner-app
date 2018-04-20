@@ -17,10 +17,10 @@ app.use(function(req, res, next) {
 
 //basic root route
 app.get('/',function(req,res){
-  console.log('do you stuff here')
+  res.render('home');
   });
 
-
+app.set("view engine", "ejs");
 
 app.listen(process.env.PORT || 3000,function(){
   console.log('server running');
