@@ -1,0 +1,124 @@
+.navbar-default {
+  background-color: #FF4900;
+}
+
+.navbar-brand {
+  color: #fff;
+  margin-left: 5em;
+  margin-bottom: 0.5em;
+}
+
+/* .nav-item a {
+  color: #000;
+  margin-bottom: 1em;
+} */
+
+.navbar {
+  padding-top: 1em;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+input {
+  margin-bottom: 0.5em;
+  margin-left: 65em;
+}
+
+#email {
+  margin-left: 0em;
+}
+
+#password {
+  margin-left: 0em;
+}
+
+#first_name {
+  margin-left: 0em;
+}
+
+#last_name {
+  margin-left: 0em;
+}
+
+#email_signup {
+  margin-left: 0em;
+}
+
+#password_signup {
+  margin-left: 0em;
+}
+
+#city {
+  margin-left: 0em;
+}
+
+#btn_login {
+  /* text-align: center; */
+  padding-right: 25.2em;
+}
+
+#btn_signup {
+  /* text-align: center; */
+  margin-left: -50em;
+  padding-right: 25.2em;
+}
+
+.forgot-pwd{
+  margin-left: 1em;
+}
+
+.new-account {
+  margin-left: 1em;
+}
+
+.sign-in {
+  color: #000;
+  margin-left: 2em;
+  margin-bottom: 0.5em;
+}
+
+.faq {
+  color: #000;
+  margin-left: 2em;
+  margin-bottom: 0.5em;
+}
+
+ul {
+  margin-left: -1.5em;
+}
+
+ul li {
+  list-style-type: none;
+  line-height: 1em;
+}
+
+.sidenav {
+    height: 95%;
+    width: 180px;
+    position: fixed;
+    top: 74;
+    left: 0;
+    background-color: #CCC;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #000;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}

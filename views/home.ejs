@@ -14,7 +14,7 @@
 
   <!-- custom styles -->
   <link rel="stylesheet" type="text/css" href="/styles/home.css">
-  <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+  <link rel="stylesheet" type="text/css" href="/styles/style.css">
   <!-- <script type='text/javascript' src='https://app.ticketmaster.com/discovery/v2/events.json?apikey=l9XiABE2P5GIQGAhtFcErCCFoA2Ap9R4'> </script> -->
   <!-- jQuery library -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -28,41 +28,123 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Songwriter's Corner</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <!-- <nav class="navbar navbar-expand navbar-default">
+  <a class="navbar-brand" href="/">Songwriter's Corner</a>
+  <form class="form-inline my-2 my-lg-0">
+  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+</form>
+<div class="dropdown show">
+<a class="btn btn-secondary dropdown-toggle" href="/signup_login" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+My Account
+</a>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
+<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+<a class="dropdown-item" href="/signup_login">Sign In</a>
+</div>
+</div>
+<li class="nav-item">
+<a class="nav-link" href="#">FAQ</a>
+</li>
+</nav> -->
+
+<nav class="navbar navbar-expand navbar-default">
+  <a class="navbar-brand" href="/">Songwriter's Corner</a>
+  <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+  </form>
+  <a class="sign-in" data-toggle="modal" href="#Login">Sign In</a>
+  <a class="faq" href="#">FAQ</a>
 </nav>
 
-                  </body>
-                  </html>
+<div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method='post' action='login'>
+
+
+          <div class="form-group">
+            <label for="username_l" class="col-form-label">Email</label>
+            <input class="form-control" id="email" name='email'/>
+          </div>
+          <div class="form-group">
+            <label for="password_l" class="col-form-label">Password</label>
+            <input type="password" class="form-control" id="password" name='password'/>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn " id='btn_login' >Sign In</button>
+        </form>
+      </div>
+      <p class="forgot-pwd"><a href="#">Forgot Your Password?</a></p>
+      <p class="new-account">New to Songwriter's Corner? <a data-toggle="modal" href="#Signup">Create an account today!</a></p>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Signup" tabindex="-1" role="dialog" aria-labelledby="Signup" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method='post' action='signup'>
+
+          <div class="form-group">
+            <label for="first_name" class="col-form-label">First name:</label>
+            <input type="text" class="form-control" id="first_name" name='first_name'>
+          </div>
+          <div class="form-group">
+            <label for="last_name" class="col-form-label">Last name:</label>
+            <input type="text" class="form-control" id="last_name" name='last_name'>
+          </div>
+          <div class="form-group">
+            <label for="username" class="col-form-label">Email:</label>
+            <input class="form-control" id="email_signup" name='email'>
+          </div>
+          <div class="form-group">
+            <label for="city" class="col-form-label">City:</label>
+            <input type="text" class="form-control" id="city" name='city'/>
+          </div>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Select a state
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn " id='btn_signup' >Signup</button>
+          </form>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="sidenav">
+  <p><a href="#">Top Rated Lyrics</a></p>
+  <ul>Browse All Lyrics
+    <li><a href="#">Alphabetical</a></li>
+    <li><a href="#">By Genre</a></li>
+    <li><a href="#">By Tags</a></li>
+  </ul>
+</div>
+
+<div class="main">
+</div>
+</body>
+</html>

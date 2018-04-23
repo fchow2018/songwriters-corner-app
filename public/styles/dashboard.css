@@ -1,0 +1,73 @@
+.navbar-default {
+  background-color: #FF4900;
+}
+
+.navbar-brand {
+  color: #fff;
+  margin-left: 5em;
+  margin-bottom: 0.5em;
+}
+
+/* .nav-item a {
+  color: #000;
+  margin-bottom: 1em;
+} */
+
+.navbar {
+  padding-top: 1em;
+}
+
+h2 {
+  margin-top: 2em;
+  margin-bottom: 4em;
+  text-align: center;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+input {
+  margin-bottom: 0.5em;
+  margin-left: 65em;
+}
+
+.fa {
+  color: black;
+  padding-right: 1em;
+}
+
+.fa-star {
+  margin-right: -0.3em;
+}
+#edit_profile {
+  background-color: #FF4900;
+  border-color: #FF4900;
+  color: black;
+  margin-left: 30em;
+  margin-bottom: 5em;
+}
+
+#my_songs {
+  background-color: #FF4900;
+  border-color: #FF4900;
+  color: black;
+  margin-left: 13em;
+  margin-bottom: 4em;
+}
+
+#add_songs {
+  background-color: #FF4900;
+  border-color: #FF4900;
+  color: black;
+  margin-bottom: -20em;
+  margin-left: -44.5em;
+}
+
+#rated_songs{
+  background-color: #FF4900;
+  border-color: #FF4900;
+  color: black;
+  margin-bottom: -20em;
+  margin-left: 13em;
+}
