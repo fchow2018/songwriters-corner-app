@@ -1,73 +1,62 @@
-.navbar-default {
-  background-color: #FF4900;
-}
-
-.navbar-brand {
-  color: #fff;
-  margin-left: 5em;
-  margin-bottom: 0.5em;
-}
-
-/* .nav-item a {
-  color: #000;
-  margin-bottom: 1em;
-} */
-
-.navbar {
-  padding-top: 1em;
-}
-
 h2 {
   margin-top: 2em;
   margin-bottom: 4em;
   text-align: center;
 }
 
-a:hover {
-  color: black;
-  text-decoration: none;
-}
-input {
-  margin-bottom: 0.5em;
-  margin-left: 65em;
+.col-form-label {
+  margin-left: 22em;
+  margin-bottom: 2em;
 }
 
-.fa {
-  color: black;
-  padding-right: 1em;
+.form-control {
+  margin-top: -4.5em;
+}
+.form-group {
+  margin-left: 10em;
 }
 
-.fa-star {
-  margin-right: -0.3em;
-}
-#edit_profile {
-  background-color: #FF4900;
-  border-color: #FF4900;
-  color: black;
+#tags {
+  margin-top: -4.5em;
   margin-left: 30em;
-  margin-bottom: 5em;
+  width: 40%;
 }
 
-#my_songs {
-  background-color: #FF4900;
-  border-color: #FF4900;
-  color: black;
-  margin-left: 13em;
-  margin-bottom: 4em;
+.form-control-sm{
+  margin-left: 34.3em;
+  width: 8%;
 }
 
-#add_songs {
-  background-color: #FF4900;
-  border-color: #FF4900;
-  color: black;
-  margin-bottom: -20em;
-  margin-left: -44.5em;
+#song_title {
+  margin-top: -4.5em;
+  margin-left: 30em;
+  width: 40%;
 }
 
-#rated_songs{
+#lyrics {
+  margin-left: 31em;
+  width: 32.8%;
+}
+
+select {
+  margin-top: -2em;
+  margin-left: 31em;
+}
+
+#publish {
+  margin-left: 41em;
+  padding-right: 30.3em;
+  /* padding: 0px; */
+  text-align: center;
+  text-transform: uppercase;
   background-color: #FF4900;
-  border-color: #FF4900;
+}
+
+#dashboard {
+  font-size: 20px;
   color: black;
-  margin-bottom: -20em;
-  margin-left: 13em;
+}
+
+#dashboard:hover {
+  color: #FF4900;
 }

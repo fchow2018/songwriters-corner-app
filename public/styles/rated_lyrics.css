@@ -1,0 +1,23 @@
+h2 {
+  margin-top: -0.5em;
+  margin-bottom: 2em;
+  margin-left: 30em;
+}
+
+.fa-star {
+  margin: 2em 25em -0.5em 9em;
+}
+
+#dashboard {
+  font-size: 20px;
+  color: black;
+}
+
+#dashboard:hover {
+  color: #FF4900;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+}

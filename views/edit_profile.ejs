@@ -1,0 +1,94 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+
+  <!-- set viewport to device width to make site responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- bootstrap css -->
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- custom styles -->
+  <link rel="stylesheet" type="text/css" href="/styles/edit_profile.css">
+  <link rel="stylesheet" type="text/css" href="/styles/style.css">
+  <!-- <script type='text/javascript' src='https://app.ticketmaster.com/discovery/v2/events.json?apikey=l9XiABE2P5GIQGAhtFcErCCFoA2Ap9R4'> </script> -->
+  <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+  <!-- Latest compiled and minified Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
+  <title>Home</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand navbar-default">
+    <a class="navbar-brand" href="/">Songwriter's Corner</a>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    </form>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        User
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="/dashboard">My Dashboard</a>
+        <a class="dropdown-item" href="/add_lyrics">My Lyrics</a>
+        <a class="dropdown-item" href="/home">Sign Out</a>
+      </div>
+    </div>
+    <div class="container">
+      <a class="faq" href="#">FAQ</a>
+    </nav>
+    <a id="dashboard" href="/dashboard">Back to dashboard</a>
+    <div class="profile_header">
+      <i class="fa fa-user" style="font-size:5em"></i><h2>Edit Profile</h2>
+    </div>
+    <div class="form-group">
+      <label id="staticFirstName" for="staticFirstName" class="col-sm-2 col-form-label">First Name:</label>
+      <input type="text" readonly class="form-control-plaintext" id="first_name" value="John">
+    </div>
+    <div class="form-group">
+      <label id="staticLastName" for="staticLastName" class="col-sm-2 col-form-label">Last Name:</label>
+      <input type="text" readonly class="form-control-plaintext" id="last_name" value="Smith">
+    </div>
+    <div class="form-group">
+      <label for="username" class="col-form-label">Email:</label>
+      <input class="form-control" id="email" name='email'>
+    </div>
+    <div class="form-group">
+      <label for="city" class="col-form-label">City:</label>
+      <input type="text" class="form-control" id="city" name='city'/>
+    </div>
+    <div class="form-group">
+      <label for="city" class="col-form-label">State:</label>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Select a state
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="new_pwd" class="col-form-label">New password:</label>
+      <input type="text" class="form-control" id="new_pwd" name='new_pwd'/>
+    </div>
+    <div class="form-group">
+      <label for="confirm_pwd" class="col-form-label">Confirm password:</label>
+      <input type="text" class="form-control" id="confirm_pwd" name='current_pwd'/>
+    </div>
+    <a class="delete_account" href="#">Delete your account</a>
+    <button type="button" class="btn " id='btn_update' >Update</button>
+  </div>
+</body>
+</html>

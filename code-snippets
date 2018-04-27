@@ -1,0 +1,84 @@
+app.set('views', __dirname + '/views');      // Views directory
+
+// cookieParser = require('cookie-parser'),
+// session = require('express-session'),
+// passport = require('passport'),
+// LocalStrategy = require('passport-local').Strategy;
+
+// app.use(cookieParser());
+// app.use(session({
+//   secret: 'thisisasecret', // change this!
+//   resave: false,
+//   saveUninitialized: false,
+// }));
+// // app.use(passport.initialize());
+// app.use(passport.session());
+
+// passport.use(new LocalStrategy(User.authenticate()));
+// passport.serializeUser(User.serializeUser());
+// passport.deserializeUser(User.deserializeUser());
+
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <div><%= user.username %></div>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="/dashboard">My Dashboard</a>
+      <a class="dropdown-item" href="#">My Lyrics</a>
+      <a class="dropdown-item" href="/home">Sign Out</a>
+    <% } %>
+    </div>
+  </div>
+
+
+
+  // app.post('/',function(req,res){
+  //   // ragex for email verification
+  //   var emailRegex = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+  //   // email verified
+  //   if( !emailRegex.test(req.body.username)){;
+  //     res.status(400).json({message:'Invalid email address'});
+  //   }
+  //   User.register(new User({username:req.body.username,first_name:req.body.first_name,last_name:req.body.last_name})
+  //   ,req.body.password,function(err,newUser){
+  //     if(err){
+  //       res.status(400).json({'message':err});
+  //       throw err;
+  //     }else{
+  //       passport.authenticate('local')(req, res, function(err1,ok) {
+  //         if(err1){
+  //           res.status(400).json({'message':err1.message});
+  //         }
+  //         else{
+  //           res.redirect("/");
+  //         }
+  //       });
+  //
+  //     }
+  //   });
+  //
+  //
+  // });
+  //
+  // app.post("/login", passport.authenticate("local"), function (req, res) {
+  //   console.log(req.user);
+  //   // res.send("logged in!!!"); // sanity check
+  //   res.redirect("/"); // preferred!
+  // });
+  //
+  // app.get("/logout", function (req, res) {
+  //   console.log("BEFORE logout", JSON.stringify(req.user));
+  //   req.logout();
+  //   console.log("AFTER logout", JSON.stringify(req.user));
+  //   res.redirect("/");
+  // });
+  //
+  // app.post('/', passport.authenticate('local'),function (req,res) {
+  //   if(!req.user){
+  //     res.status(400);
+  //   }else{
+  //
+  //     res.render('home');
+  //   }
+  // });

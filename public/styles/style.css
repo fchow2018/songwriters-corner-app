@@ -1,0 +1,30 @@
+/* nav */
+
+.navbar-default {
+  background-color: #FF4900;
+}
+
+.navbar-brand {
+  color: #fff;
+  margin-left: 5em;
+  margin-bottom: 0.5em;
+}
+
+.navbar {
+  padding-top: 1em;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+input {
+  margin-bottom: 0.5em;
+  margin-left: 65em;
+}
+
+.faq {
+  color: #000;
+  margin-left: 2em;
+  margin-bottom: 0.5em;
+}

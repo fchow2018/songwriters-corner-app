@@ -1,0 +1,100 @@
+a.delete_account {
+  font-size: 17px;
+  margin-left: 37.3em;
+}
+
+input {
+  margin-left: 20em;
+}
+h2 {
+  margin-top: -0.5em;
+  margin-bottom: 2em;
+  margin-left: 23em;
+}
+
+.fa {
+  margin: 2em 25em -0.5em 5.9em;
+}
+
+.profile_header{
+  margin-left: 10em;
+  margin-bottom: 5em;
+}
+
+label {
+  margin-left: 48.6em;
+  /* margin-bottom: 10em; */
+}
+
+#staticFirstName {
+  margin-left: 47.5em;
+}
+
+#staticLastName {
+  margin-left: 47.5em;
+}
+
+.form-group {
+  margin-left: -9em;
+
+}
+
+#password {
+  margin-left: 0em;
+}
+
+#first_name {
+  margin-top: -2.3em;
+  width: 20%;
+}
+
+#last_name {
+  margin-top: -2em;
+  width: 20%;
+}
+
+#email {
+  margin-top: -2em;
+  width: 20%;
+}
+
+#new_pwd {
+  margin-top: -2em;
+  width: 20%;
+}
+
+#confirm_pwd {
+  margin-top: -2em;
+  margin-bottom: -5em;
+  width: 20%;
+}
+
+#city {
+  margin-top: -2em;
+  width: 20%;
+}
+
+#dropdownMenuButton {
+  margin-top: -2em;
+  margin-bottom: -5em;
+  margin-left: 65em;
+}
+
+#btn_update {
+  margin-top: 13em;
+  margin-left: -10em;
+  width: 36%;
+}
+
+.btn {
+  margin-bottom: 5em;
+}
+
+#dashboard {
+  font-size: 20px;
+  color: black;
+}
+
+#dashboard:hover {
+  color: #FF4900;
+}

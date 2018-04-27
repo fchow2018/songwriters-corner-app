@@ -1,30 +1,4 @@
-.navbar-default {
-  background-color: #FF4900;
-}
-
-.navbar-brand {
-  color: #fff;
-  margin-left: 5em;
-  margin-bottom: 0.5em;
-}
-
-/* .nav-item a {
-  color: #000;
-  margin-bottom: 1em;
-} */
-
-.navbar {
-  padding-top: 1em;
-}
-
-a:hover {
-  color: black;
-  text-decoration: none;
-}
-input {
-  margin-bottom: 0.5em;
-  margin-left: 65em;
-}
+/* Sign In */
 
 #email {
   margin-left: 0em;
@@ -33,6 +7,22 @@ input {
 #password {
   margin-left: 0em;
 }
+
+.forgot-pwd{
+  margin-left: 1em;
+}
+
+.new-account {
+  margin-left: 1em;
+}
+
+.sign-in {
+  color: #000;
+  margin-left: 2em;
+  margin-bottom: 0.5em;
+}
+
+/* Sign Up */
 
 #first_name {
   margin-left: 0em;
@@ -55,35 +45,15 @@ input {
 }
 
 #btn_login {
-  /* text-align: center; */
   padding-right: 25.2em;
 }
 
 #btn_signup {
-  /* text-align: center; */
   margin-left: -50em;
-  padding-right: 25.2em;
+  padding-right: 25.1em;
 }
 
-.forgot-pwd{
-  margin-left: 1em;
-}
-
-.new-account {
-  margin-left: 1em;
-}
-
-.sign-in {
-  color: #000;
-  margin-left: 2em;
-  margin-bottom: 0.5em;
-}
-
-.faq {
-  color: #000;
-  margin-left: 2em;
-  margin-bottom: 0.5em;
-}
+/* Side nav */
 
 ul {
   margin-left: -1.5em;
