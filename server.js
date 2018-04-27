@@ -2,12 +2,31 @@ var express = require("express"),
   app = express(),
   bodyParser = require("body-parser"),
   methodOverride = require("method-override");
+  cookieParser = require('cookie-parser'),
+  session = require('express-session'),
+  passport = require('passport'),
+  LocalStrategy = require('passport-local').Strategy;
+
+  app.use(cookieParser());
+  app.use(session({
+    secret: 'thisisasecret', // change this!
+    resave: false,
+    saveUninitialized: false,
+  }));
+  // app.use(passport.initialize());
+  app.use(passport.session());
+
+  passport.use(new LocalStrategy(User.authenticate()));
+  passport.serializeUser(User.serializeUser());
+  passport.deserializeUser(User.deserializeUser());
 
 // Require Lyrics Post model
 var db = require('./models'),
-Post = db.Post;
+Post = db.Post,
+User = db.User;
 
 // Configure app
+app.set('views', __dirname + '/views');      // Views directory
 app.use(express.static(__dirname + "/public"));         // Static directory
 app.use(bodyParser.urlencoded({ extended: true })); // req.body
 
